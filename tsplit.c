@@ -35,7 +35,7 @@ int main()
 	int32_t s[256], i;
 	char* w = malloc(maxw*sizeof(char));
 	assert(w);
-	char fn[] = "prime-list-part-%d.txt";
+	char fn[] = "tsplit-file-%d.txt";
 	char c, ff[strlen(fn) + 100]; // Only a problem if you splitting file into more than a 10^100 pieces.
 	for (i = 0; i < 256; i++) s[i] = 0;
 	init_seperator_mask(s, " \n");
