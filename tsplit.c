@@ -52,10 +52,8 @@ int main()
 			fputs(w, fp);
 			mm += ww, ww = 0;
 		}
-		if (fc > 10) break;
 	}
 	close_file(fp);
 	free(w);
-	assert(c == EOF);
 	return 0;
 }
